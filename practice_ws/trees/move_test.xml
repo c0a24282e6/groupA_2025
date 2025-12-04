@@ -1,0 +1,20 @@
+<root>
+    <BehaviorTree ID="move_test">
+    <Sequence name="main">
+        <SetDestination name="set_target" value="[(1, 0, 90)]"/>
+        <GoToPose name="move_to_place_loc"/>
+        <SetDetector name="set color_dtcs" func_name="color_dtcs.d_ball" id="None"/>
+        <Watch name="watch_ball"/>
+        <GetObjFront name="get_ball_front"/>
+        <GoToPose name="move_to_place_loc"/>
+        <ReachObj name="reach_ball" />
+        <Pick name="pick"/>
+        <ObjectLocation name="object_location"/>
+        <Shift name="shift" target="[0.175]"/>
+        <Sleep name="sleep" time="[3]"/>
+        <Fit2 name="fit2" distance="[0.175]"/>
+        <Close name="close"/>
+        <ArmHome name="home"/>
+    </Sequence>
+    </BehaviorTree>
+</root>
