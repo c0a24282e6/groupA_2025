@@ -38,8 +38,8 @@ def d_ball(img):
 
     # BGR空間での抽出範囲
     ## ボール
-    lower = np.array([10, 100, 100]) # 色相, 彩度, 明度 の下限
-    upper = np.array([25, 255, 255]) # 色相, 彩度, 明度 の上限
+    lower = np.array([7, 230, 175]) # 色相, 彩度, 明度 の下限
+    upper = np.array([9, 237, 255]) # 色相, 彩度, 明度 の上限
 
     # 指定範囲に入る画素を抽出（白が該当部分）
     mask = inRangeWrap(hsv_img, lower, upper)
@@ -59,8 +59,8 @@ def d_coke(img):
 
     # BGR空間での抽出範囲
     ## コーラ缶
-    lower = np.array([10, 100, 100]) # 色相, 彩度, 明度 の下限
-    upper = np.array([170, 255, 255]) # 色相, 彩度, 明度 の上限
+    lower = np.array([10, 237, 155]) # 色相, 彩度, 明度 の下限
+    upper = np.array([170, 247, 240]) # 色相, 彩度, 明度 の上限
 
     # 指定範囲に入る画素を抽出（白が該当部分）
     mask = inRangeWrap(hsv_img, lower, upper)
