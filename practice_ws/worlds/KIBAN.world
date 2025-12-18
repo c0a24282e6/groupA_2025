@@ -73,7 +73,7 @@
     </scene>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>-1.92155 -2.82361 7.22077 0 1.1538 1.4976</pose>
+        <pose>-1.07604 -0.814879 8.03423 0 1.2298 1.9096</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -2154,45 +2154,25 @@
       <static>1</static>
     </model>
     <state world_name='default'>
-      <sim_time>148 544000000</sim_time>
-      <real_time>154 855061170</real_time>
-      <wall_time>1765432128 897860229</wall_time>
-      <iterations>83787</iterations>
-      <model name='Coke'>
-        <pose>-1.91896 2.16668 -1.1e-05 -2e-06 -4e-06 -0</pose>
-        <scale>1 1 1</scale>
-        <link name='body'>
-          <pose>-1.91896 2.16668 -1.1e-05 -2e-06 -4e-06 -0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -9.8 0 -0 1e-06</acceleration>
-          <wrench>0 0 -0.294 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='Coke_0'>
-        <pose>-4.99788 3.36559 -1e-06 -1e-06 5e-06 0</pose>
-        <scale>1 1 1</scale>
-        <link name='body'>
-          <pose>-4.99788 3.36559 -1e-06 -1e-06 5e-06 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-6e-06 -2e-06 -0.127731 -1.5863 -0.121357 -3e-06</acceleration>
-          <wrench>-0 -0 -0.003832 0 -0 0</wrench>
-        </link>
-      </model>
+      <sim_time>333 494000000</sim_time>
+      <real_time>57 439571369</real_time>
+      <wall_time>1766072483 810999857</wall_time>
+      <iterations>34425</iterations>
       <model name='Ecoforms_Plant_Container_S14Turquoise'>
-        <pose>-2.05779 -1.35343 -0.000489 -0.0103 -0.008522 1.4e-05</pose>
+        <pose>-2.05779 -1.35343 -0.000479 -0.0103 -0.008523 1.4e-05</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>-2.05779 -1.35343 -0.000489 -0.0103 -0.008522 1.4e-05</pose>
+          <pose>-2.05779 -1.35343 -0.000479 -0.0103 -0.008523 1.4e-05</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -9.8 0 -0 0</acceleration>
-          <wrench>0 0 -9.8 0 -0 0</wrench>
+          <acceleration>-2.5e-05 -0.000234 0.027074 -0.489735 0.052472 0</acceleration>
+          <wrench>-2.5e-05 -0.000234 0.027074 0 -0 0</wrench>
         </link>
       </model>
       <model name='Ecoforms_Plant_Container_S14Turquoise_clone'>
-        <pose>-1.6324 -1.39935 -0.000479 -0.010306 -0.008525 -1e-05</pose>
+        <pose>-1.6324 -1.39935 -0.000488 -0.010301 -0.008519 -1e-05</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>-1.6324 -1.39935 -0.000479 -0.010306 -0.008525 -1e-05</pose>
+          <pose>-1.6324 -1.39935 -0.000488 -0.010301 -0.008519 -1e-05</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 -0 -0 -0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
@@ -2302,14 +2282,24 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='orange_ball'>
-        <pose>2.27827 0.075653 0.0325 0 -0 0</pose>
+      <model name='movable_coke_can_green'>
+        <pose>-5.026 3.03048 -5e-06 -1.2e-05 -1.2e-05 -0.000128</pose>
         <scale>1 1 1</scale>
-        <link name='ball'>
-          <pose>2.27827 0.075653 0.0325 0 -0 0</pose>
+        <link name='link'>
+          <pose>-5.026 3.03048 -5e-06 -1.2e-05 -1.2e-05 -0.000128</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -0.14602 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='movable_coke_can_green_0'>
+        <pose>-1.99484 1.73808 -6e-06 -3e-05 -3e-05 -0.000113</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-1.99484 1.73808 -6e-06 -3e-05 -3e-05 -0.000113</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -0.14602 0 -0 0</wrench>
         </link>
       </model>
       <model name='orange_ball_0'>
@@ -2322,73 +2312,83 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='turtlebot3_lime_system'>
-        <pose>-2.00004 -0.499999 -0.001014 -5e-06 0.006987 2.1e-05</pose>
+      <model name='orange_ball_1'>
+        <pose>-7.3725 -0.106563 0.0325 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='base_footprint'>
-          <pose>-2.00004 -0.499999 -0.001014 -5e-06 0.006987 2.1e-05</pose>
-          <velocity>1e-06 2e-06 5.2e-05 -8e-06 -0.000156 1.3e-05</velocity>
+        <link name='ball'>
+          <pose>-7.3725 -0.106563 0.0325 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
+      </model>
+      <model name='turtlebot3_lime_system'>
+        <pose>-2.00004 -0.499999 -0.001014 -5e-06 0.006987 1.9e-05</pose>
+        <scale>1 1 1</scale>
+        <link name='base_footprint'>
+          <pose>-2.00004 -0.499999 -0.001014 -5e-06 0.006987 1.9e-05</pose>
+          <velocity>1e-06 2e-06 5.2e-05 -8e-06 -0.000156 1.3e-05</velocity>
+          <acceleration>0 0 -0 0 -0 0</acceleration>
+          <wrench>0 0 -0 0 -0 0</wrench>
+        </link>
         <link name='gripper_left_link'>
-          <pose>-2.02016 -0.478994 0.552339 -4e-06 0.007035 3.1e-05</pose>
+          <pose>-2.02017 -0.478996 0.552339 -4e-06 0.007018 2.4e-05</pose>
           <velocity>2e-06 5e-06 4.7e-05 0 5.1e-05 1.3e-05</velocity>
-          <acceleration>0.07638 -0.000853 -0.001518 0 -0 0</acceleration>
+          <acceleration>0.076412 -0.000853 -0.001518 0 -0 0</acceleration>
           <wrench>7.6e-05 -1e-06 -2e-06 0 -0 0</wrench>
         </link>
         <link name='gripper_right_link'>
-          <pose>-2.02016 -0.521001 0.552339 -4e-06 0.007035 3.1e-05</pose>
+          <pose>-2.02017 -0.520999 0.552339 -4e-06 0.007018 2.4e-05</pose>
           <velocity>3e-06 5e-06 4.7e-05 0 5.1e-05 1.3e-05</velocity>
-          <acceleration>0.076934 -0.000851 -0.001503 0 -0 0</acceleration>
+          <acceleration>0.076967 -0.000851 -0.001503 0 -0 0</acceleration>
           <wrench>7.7e-05 -1e-06 -2e-06 0 -0 0</wrench>
         </link>
         <link name='link2'>
-          <pose>-2.02301 -0.499999 0.14615 -3e-06 0.006987 3.1e-05</pose>
+          <pose>-2.02301 -0.499999 0.14615 -3e-06 0.006987 2.4e-05</pose>
           <velocity>-2.2e-05 3e-06 4.8e-05 3e-06 -0.000156 1.4e-05</velocity>
-          <acceleration>0.000107 -0.000395 -0.000277 0.010511 -0.000122 0.001053</acceleration>
+          <acceleration>0.000107 -0.000395 -0.000277 0.010509 -0.000121 0.001053</acceleration>
           <wrench>1.1e-05 -3.9e-05 -2.7e-05 0 -0 0</wrench>
         </link>
         <link name='link3'>
-          <pose>-2.0226 -0.499999 0.205648 -4e-06 0.006988 3.1e-05</pose>
+          <pose>-2.0226 -0.499999 0.205648 -4e-06 0.006993 2.4e-05</pose>
           <velocity>-3.1e-05 3e-06 4.8e-05 1e-06 0.000179 1.4e-05</velocity>
-          <acceleration>0.000177 -0.000368 -0.000515 0.008291 0.334643 0.000608</acceleration>
+          <acceleration>0.000177 -0.000368 -0.000515 0.008292 0.334943 0.000607</acceleration>
           <wrench>2.3e-05 -4.8e-05 -6.7e-05 0 -0 0</wrench>
         </link>
         <link name='link4'>
-          <pose>-2.02173 -0.499998 0.329645 -4e-06 0.007035 3.1e-05</pose>
+          <pose>-2.02173 -0.499998 0.329645 -4e-06 0.007018 2.4e-05</pose>
           <velocity>-9e-06 3e-06 4.8e-05 0 5e-05 1.4e-05</velocity>
-          <acceleration>0.041706 -0.001011 -0.000981 0.007289 0.205939 0.000269</acceleration>
-          <wrench>0.004087 -9.9e-05 -9.6e-05 0 -0 0</wrench>
+          <acceleration>0.041743 -0.001011 -0.000982 0.007289 0.205919 0.000269</acceleration>
+          <wrench>0.004091 -9.9e-05 -9.6e-05 0 -0 0</wrench>
         </link>
         <link name='link5'>
-          <pose>-2.02141 -0.499998 0.374644 -4e-06 0.007035 3.1e-05</pose>
-          <velocity>-7e-06 3e-06 4.7e-05 0 5e-05 1.3e-05</velocity>
-          <acceleration>0.050997 -0.001347 -0.001177 0.007287 0.205939 2e-05</acceleration>
-          <wrench>0.004998 -0.000132 -0.000115 0 -0 0</wrench>
+          <pose>-2.02141 -0.499998 0.374644 -4e-06 0.007018 2.4e-05</pose>
+          <velocity>-6e-06 3e-06 4.7e-05 0 5e-05 1.3e-05</velocity>
+          <acceleration>0.051033 -0.001347 -0.001177 0.007288 0.205919 2e-05</acceleration>
+          <wrench>0.005001 -0.000132 -0.000115 0 -0 0</wrench>
         </link>
         <link name='link6'>
-          <pose>-2.021 -0.499998 0.434142 -4e-06 0.007035 3.1e-05</pose>
-          <velocity>-4e-06 3e-06 4.7e-05 0 5.1e-05 1.3e-05</velocity>
-          <acceleration>0.063266 -0.001769 -0.001345 0.007284 0.20635 2.1e-05</acceleration>
-          <wrench>0.002088 -5.8e-05 -4.4e-05 0 -0 0</wrench>
+          <pose>-2.021 -0.499998 0.434142 -4e-06 0.007018 2.4e-05</pose>
+          <velocity>-3e-06 3e-06 4.7e-05 0 5.1e-05 1.3e-05</velocity>
+          <acceleration>0.063301 -0.001769 -0.001345 0.007285 0.20633 2.1e-05</acceleration>
+          <wrench>0.002089 -5.8e-05 -4.4e-05 0 -0 0</wrench>
         </link>
         <link name='link7'>
-          <pose>-2.02066 -0.499997 0.481641 -4e-06 0.007035 3.1e-05</pose>
+          <pose>-2.02066 -0.499998 0.481641 -4e-06 0.007018 2.4e-05</pose>
           <velocity>-1e-06 3e-06 4.7e-05 0 5.1e-05 1.3e-05</velocity>
-          <acceleration>0.075007 -0.002206 -0.010557 0.007291 0.206355 -0.00018</acceleration>
-          <wrench>0.010822 -0.000318 -0.001523 0 -0 0</wrench>
+          <acceleration>0.075041 -0.002206 -0.010556 0.007292 0.206335 -0.00018</acceleration>
+          <wrench>0.010827 -0.000318 -0.001523 0 -0 0</wrench>
         </link>
         <link name='wheel_left_link'>
-          <pose>-1.99962 -0.352874 0.058985 -1.57001 0.007084 2.1e-05</pose>
-          <velocity>-1e-05 2e-06 5.2e-05 -2.6e-05 -0.000174 1.3e-05</velocity>
-          <acceleration>0.000227 -0.00102 0.001089 -0.018733 -0.009639 -0.001343</acceleration>
+          <pose>-1.99962 -0.352874 0.058985 -1.57001 0.006929 1.9e-05</pose>
+          <velocity>-1e-05 2e-06 5.2e-05 -2.6e-05 -0.000173 1.3e-05</velocity>
+          <acceleration>0.000226 -0.00102 0.001089 -0.018734 -0.00958 -0.001342</acceleration>
           <wrench>6e-06 -2.9e-05 3.1e-05 0 -0 0</wrench>
         </link>
         <link name='wheel_right_link'>
-          <pose>-1.99962 -0.647124 0.058986 -1.57001 0.007021 2.1e-05</pose>
+          <pose>-1.99962 -0.647124 0.058986 -1.57001 0.00702 1.9e-05</pose>
           <velocity>-7e-06 2e-06 5.4e-05 -2.7e-05 -0.000119 1.3e-05</velocity>
-          <acceleration>-0.000444 -0.001003 0.000719 -0.019006 0.019654 -0.0006</acceleration>
+          <acceleration>-0.000444 -0.001003 0.000719 -0.019007 0.019655 -0.0006</acceleration>
           <wrench>-1.3e-05 -2.9e-05 2.1e-05 0 -0 0</wrench>
         </link>
       </model>
@@ -2547,202 +2547,6 @@
       </link>
       <pose>-2.05779 -1.35343 0 0 -0 0</pose>
     </model>
-    <model name='Coke'>
-      <static>0</static>
-      <link name='body'>
-        <pose>0 0 0 0 -0 0</pose>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://Coke/meshes/coke.obj</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://Coke/meshes/coke.obj</uri>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <inertial>
-          <mass>0.03</mass>
-          <inertia>
-            <ixx>0.00336667</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.000866667</iyy>
-            <iyz>0</iyz>
-            <izz>0.00416667</izz>
-          </inertia>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose>-1.91896 2.16668 0 0 -0 0</pose>
-    </model>
-    <model name='Coke_0'>
-      <static>0</static>
-      <link name='body'>
-        <pose>0 0 0 0 -0 0</pose>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://Coke/meshes/coke.obj</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://Coke/meshes/coke.obj</uri>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <inertial>
-          <mass>0.03</mass>
-          <inertia>
-            <ixx>0.00336667</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.000866667</iyy>
-            <iyz>0</iyz>
-            <izz>0.00416667</izz>
-          </inertia>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose>-4.99788 3.36559 0 0 -0 0</pose>
-    </model>
-    <model name='orange_ball'>
-      <link name='ball'>
-        <inertial>
-          <mass>0.03</mass>
-          <inertia>
-            <ixx>1.268e-05</ixx>
-            <iyy>1.268e-05</iyy>
-            <izz>1.268e-05</izz>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyz>0</iyz>
-          </inertia>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-        <pose>0 0 0 0 -0 0</pose>
-        <gravity>1</gravity>
-        <visual name='visual'>
-          <geometry>
-            <sphere>
-              <radius>0.0325</radius>
-            </sphere>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/RedBright</name>
-            </script>
-            <shader type='pixel'>
-              <normal_map>__default__</normal_map>
-            </shader>
-          </material>
-          <pose>0 0 0 0 -0 0</pose>
-          <transparency>0</transparency>
-          <cast_shadows>1</cast_shadows>
-        </visual>
-        <collision name='collision'>
-          <laser_retro>0</laser_retro>
-          <max_contacts>10</max_contacts>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.0325</radius>
-            </sphere>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
-                <fdir1>0 0 0</fdir1>
-                <slip1>0</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <coefficient>1</coefficient>
-                <patch_radius>0</patch_radius>
-                <surface_radius>0</surface_radius>
-                <use_patch_radius>1</use_patch_radius>
-                <ode>
-                  <slip>0</slip>
-                </ode>
-              </torsional>
-            </friction>
-            <bounce>
-              <restitution_coefficient>0</restitution_coefficient>
-              <threshold>1e+06</threshold>
-            </bounce>
-            <contact>
-              <collide_without_contact>0</collide_without_contact>
-              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
-              <collide_bitmask>1</collide_bitmask>
-              <ode>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-                <max_vel>0.01</max_vel>
-                <min_depth>0</min_depth>
-              </ode>
-              <bullet>
-                <split_impulse>1</split_impulse>
-                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-              </bullet>
-            </contact>
-          </surface>
-        </collision>
-      </link>
-      <static>0</static>
-      <allow_auto_disable>1</allow_auto_disable>
-      <pose>2.27827 0.075653 0 0 -0 0</pose>
-    </model>
     <model name='orange_ball_0'>
       <link name='ball'>
         <inertial>
@@ -2841,5 +2645,205 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-4.04743 1.08734 0 0 -0 0</pose>
     </model>
+    <model name='movable_coke_can_green'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.0149</mass>
+          <inertia>
+            <ixx>1e-05</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1e-05</iyy>
+            <iyz>0</iyz>
+            <izz>1e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <pose>0 0 0.061 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.033</radius>
+              <length>0.122</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://movable_coke_can_green/meshes/coke_can.obj</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-5.026 3.03048 0 0 -0 0</pose>
+    </model>
+    <model name='movable_coke_can_green_0'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.0149</mass>
+          <inertia>
+            <ixx>1e-05</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1e-05</iyy>
+            <iyz>0</iyz>
+            <izz>1e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <pose>0 0 0.061 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.033</radius>
+              <length>0.122</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://movable_coke_can_green/meshes/coke_can.obj</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-1.99484 1.73808 0 0 -0 0</pose>
+    </model>
+    <model name='orange_ball_1'>
+      <link name='ball'>
+        <inertial>
+          <mass>0.03</mass>
+          <inertia>
+            <ixx>1.268e-05</ixx>
+            <iyy>1.268e-05</iyy>
+            <izz>1.268e-05</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+        <pose>0 0 0 0 -0 0</pose>
+        <gravity>1</gravity>
+        <visual name='visual'>
+          <geometry>
+            <sphere>
+              <radius>0.0325</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/RedBright</name>
+            </script>
+            <shader type='pixel'>
+              <normal_map>__default__</normal_map>
+            </shader>
+          </material>
+          <pose>0 0 0 0 -0 0</pose>
+          <transparency>0</transparency>
+          <cast_shadows>1</cast_shadows>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.0325</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <coefficient>1</coefficient>
+                <patch_radius>0</patch_radius>
+                <surface_radius>0</surface_radius>
+                <use_patch_radius>1</use_patch_radius>
+                <ode>
+                  <slip>0</slip>
+                </ode>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1e+06</threshold>
+            </bounce>
+            <contact>
+              <collide_without_contact>0</collide_without_contact>
+              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+              <collide_bitmask>1</collide_bitmask>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+              <bullet>
+                <split_impulse>1</split_impulse>
+                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+              </bullet>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>0</static>
+      <allow_auto_disable>1</allow_auto_disable>
+      <pose>-7.3725 -0.106563 0 0 -0 0</pose>
+    </model>
+    <plugin name='gazebo_link_attacher' filename='libgazebo_link_attacher.so'/>
+    <plugin name='gazebo_ros_state' filename='libgazebo_ros_state.so'/>
   </world>
 </sdf>
