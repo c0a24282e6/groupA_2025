@@ -1,26 +1,28 @@
 <root>
-	<BehaviorTree ID="test_ball">
-		<!-- ボールの座標リスト-->
-		<ForEach name="balls_loop" items="[(x1,y1),(x2,y2),(x3,y3)]">
-			<Sequence name="process_ball">
-				<SetDetector name="set_ball_dt" func_name="color_dtcs.d_ball" id="None"/>
-				<Sleep name="wait_camera" time="[1]"/>
-				<Watch name="confirm_ball"/>
-				<GetObjFront name="calc_approach_pos"/>
-				<GoToPose name="move_to_front"/>
-				<ReachObj name="reach_ball"/>
-				<Pick name="prepare_grip"/>
-				<Fit2 name="fine_tuning" distance="[0.175]"/>
-				<Close name="grasp_ball"/>
-				<ArmHome name="lift_ball"/>
-                		<SetDestination name="set_safe_zone" value="[(2.0, 0.0, 0.0)]"/>
-                		<GoToPose name="move_to_safe"/>
-                		<Open name="release_ball"/>
-                		<Shift name="back_off" target="[-0.2]"/>
-			</Sequence>
-		</ForEach>
-		<!--スタート位置に戻る処理 -->
-		<SetDestion name="set_start_pos" value="[(0.0,0.0,0.0)]"/>
-		<GoToPose name="return_start"/>
-	</BehaviorTree>
+    <BehaviorTree ID="test_ball">
+    
+    <Sequence name="process_ball">
+        <SetDetector name="set_ball_dt" func_name="color_dtcs.d_ball" id="None"/>
+        <Watch name="confirm_ball"/>
+        <GetObjFront name="calc_approach_pos"/> 
+        <GoToPose name="move_to_front"/>
+        <ReachObj name="reach_ball"/> 
+        <Pick name="prepare_grip"/>
+        <ObjectLocation name="ball_location"/>
+        <Shift name="shift" target="[0.175]"/>
+        <Sleep name="sleep" time="[3]"/>
+        <Fit2 name="fine_tuning" distance="[0.175]"/> 
+        <Close name="grasp_ball"/> 
+        <ArmHome name="lift_ball"/>
+        
+        <SetDestination name="set_safe_zone" value="[(0.007, -1.02, 0.00143)]"/>
+        <GoToPose name="move_to_safe"/>
+        
+        <Open name="release_ball"/> 
+        <Shift name="back_off" target="[-0.2]"/>
+        <SetDestination name="set_start_pos" value="[(0.0, 0.0, 0.0)]"/>
+        <GoToPose name="return_start"/>
+    </Sequence>
+
+    </BehaviorTree>
 </root>
