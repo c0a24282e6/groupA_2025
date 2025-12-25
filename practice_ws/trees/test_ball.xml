@@ -1,17 +1,16 @@
 <root>
     <BehaviorTree ID="test_ball">
-    
     <Sequence name="process_ball">
         <SetDetector name="set_ball_dt" func_name="color_dtcs.d_ball" id="None"/>
-        <Watch name="confirm_ball"/>
+        <Sleep name="wait_camera" time="[1]"/> <Watch name="confirm_ball"/>
+        
         <GetObjFront name="calc_approach_pos"/> 
         <GoToPose name="move_to_front"/>
         <ReachObj name="reach_ball"/> 
         <Pick name="prepare_grip"/>
-        <ObjectLocation name="ball_location"/>
-        <Shift name="shift" target="[0.175]"/>
-        <Sleep name="sleep" time="[3]"/>
+
         <Fit2 name="fine_tuning" distance="[0.175]"/> 
+        
         <Close name="grasp_ball"/> 
         <ArmHome name="lift_ball"/>
         
@@ -23,6 +22,5 @@
         <SetDestination name="set_start_pos" value="[(0.0, 0.0, 0.0)]"/>
         <GoToPose name="return_start"/>
     </Sequence>
-
     </BehaviorTree>
 </root>
