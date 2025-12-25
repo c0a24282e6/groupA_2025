@@ -38,8 +38,8 @@ def d_ball(img):
 
     # BGR空間での抽出範囲
     ## ボール
-    lower = np.array([10, 100, 100])   # 下限
-    upper = np.array([25, 255, 255])   # 上限
+    lower = np.array([ 0, 100, 100]) 
+    upper = np.array([20, 255, 255])
 
     # 指定範囲に入る画素を抽出（白が該当部分）
     mask = inRangeWrap(hsv_img, lower, upper)
