@@ -1,0 +1,35 @@
+<root>
+    <BehaviorTree ID="test_redcan">
+    
+    <Sequence name="process_redcan">
+        <SetDetector name="set_redcan_dt" func_name="color_dtcs.d_redcoke" id="None"/>
+        <Watch name="confirm_redcan"/>
+    
+        <GetObjFront name="calc_approach_posredcan"/> 
+        <Pick name="prepare_grip_redcan"/>
+        <GoToPose name="move_to_front_redcan" distance="[0.35]"/>
+        
+
+        <Fit2 name="adjust_safety_dist_redcan" distance="[0.35]"/>
+
+        
+
+        <Fit2 name="fine_tuning_redcan" distance="[0.1]"/>
+        
+        <Close name="grasp_redcan"/> 
+        <ArmHome name="lift_redcan"/>
+        
+        <SetDestination name="set_safe_zone_redcan" value="[(-0.305,-0.577,-0.00143)]"/>
+    
+        <GoToPose name="move_to_safe_redcan"/>
+        
+        <Pick name="prepare_grip_redcan"/>
+        <Open name="release_redcan"/> 
+        
+        <Shift name="back_off_redcan" target="[0.2]"/>
+        <SetDestination name="set_start_pos_redcan" value="[(0.0, 0.0, 0.0)]"/>
+        <GoToPose name="return_start_redcan"/>
+    </Sequence>
+
+    </BehaviorTree>
+</root>
