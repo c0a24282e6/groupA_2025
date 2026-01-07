@@ -6,28 +6,20 @@
         <Watch name="confirm_can"/>
     
         <GetObjFront name="calc_approach_pos"/> 
-        <Pick name="prepare_grip"/>
-        <GoToPose name="move_to_front" distance="[0.35]"/>
+        <Pick name="prepare_grip"/> 
         
-
-        <Fit2 name="adjust_safety_dist" distance="[0.35]"/>
-
-        
-
-        <Fit2 name="fine_tuning" distance="[0.1]"/>
-        
+        <GoToPose name="move_to_front" distance="[0.35]"/>  
+        <Fit2 name="adjust_safety_dist" distance="[0.35]"/>        
+        <Shift name="fine_tuning" distance="[0.1]"/>
         <Close name="grasp_can"/> 
         <ArmHome name="lift_can"/>
-        
-        <SetDestination name="set_safe_zone" value="[(-0.305,-0.577,-0.00143)]"/>
     
+        <SetDestination name="set_safe_zone" value="[(0.5,-1.5,100)]"/>
         <GoToPose name="move_to_safe"/>
         
         <Pick name="prepare_grip"/>
-        <Open name="release_can"/> 
         
-        <Shift name="back_off" target="[0.2]"/>
-        <SetDestination name="set_start_pos" value="[(0.0, 0.0, 0.0)]"/>
+        <SetDestination name="set_start_pos" value="[(3, 1, 0.0)]"/>
         <GoToPose name="return_start"/>
     </Sequence>
 

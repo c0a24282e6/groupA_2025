@@ -1,0 +1,90 @@
+<root main_tree_to_execute="testdousa">
+    <BehaviorTree ID="testdousa">
+        <Sequence name="process_can">
+            <!-- 一回目 -->
+            <SetDetector name="set_can_dt" func_name="color_dtcs.d_coke" id="None"/>
+            <Watch name="confirm_can"/>
+    
+            <GetObjFront name="calc_approach_pos"/> 
+            <Pick name="prepare_grip"/> 
+        
+            <GoToPose name="move_to_front" distance="[0.35]"/>  
+            <Fit2 name="adjust_safety_dist" distance="[0.35]"/>        
+            <Fit2 name="fine_tuning" distance="[0.1]"/>
+            <Close name="grasp_can"/> 
+            <ArmHome name="lift_can"/>
+            <Sleep name="sleep" time="[1]"/>
+    
+            <SetDestination name="set_safe_zone" value="[(0,-1.5,280)]"/>
+            <GoToPose name="move_to_safe"/>
+        
+            <Open name="prepare_grip"/>
+        
+            <SetDestination name="set_start_pos" value="[(0, 0.5, 100)]"/>
+            <GoToPose name="return_start"/>
+
+            <!-- 二回目 -->
+
+            <SetDestination name="via_1" value="[-4, 2.5, 190]"/>
+            <GoToPose name="move_via_1"/>
+            
+            <SetDetector name="set_can_dt" func_name="color_dtcs.d_coke" id="None"/>
+            <Watch name="confirm_can"/>
+    
+            <GetObjFront name="calc_approach_pos"/> 
+            <Pick name="prepare_grip"/> 
+        
+            <GoToPose name="move_to_front" distance="[0.35]"/> 
+
+            <!-- 再検出 -->
+
+            <SetDestination name="via_12" value="[-4.5, 2.5, 190]"/> 
+            <GoToPose name="move_via_12"/>
+
+            <SetDetector name="set_can_dt" func_name="color_dtcs.d_coke" id="None"/>
+            <Watch name="confirm_can"/>
+    
+            <GetObjFront name="calc_approach_pos"/> 
+
+            <Fit2 name="adjust_safety_dist" distance="[0.35]"/>        
+            <Fit2 name="fine_tuning" distance="[0.1]"/>
+            <Close name="grasp_can"/> 
+            <ArmHome name="lift_can"/>
+            <Sleep name="sleep" time="[1]"/>
+    
+            <SetDestination name="set_safe_zone" value="[(0,-1.5,280)]"/>
+            <GoToPose name="move_to_safe"/>
+        
+            <Open name="prepare_grip"/>
+        
+            <SetDestination name="set_start_pos" value="[(0, 0.5, 100)]"/>
+            <GoToPose name="return_start"/>
+
+            <!-- 三回目 -->
+                
+            <SetDestination name="via_2" value="[-2, 5.5, 190]"/>
+            <GoToPose name="move_via_2"/>
+            
+            <SetDetector name="set_can_dt" func_name="color_dtcs.d_coke" id="None"/>
+            <Watch name="confirm_can"/>
+    
+            <GetObjFront name="calc_approach_pos"/> 
+            <Pick name="prepare_grip"/> 
+        
+            <GoToPose name="move_to_front" distance="[0.35]"/>  
+            <Fit2 name="adjust_safety_dist" distance="[0.35]"/>        
+            <Fit2 name="fine_tuning" distance="[0.1]"/>
+            <Close name="grasp_can"/> 
+            <ArmHome name="lift_can"/>
+            <Sleep name="sleep" time="[1]"/>
+    
+            <SetDestination name="set_safe_zone" value="[(0,-1.5,280)]"/>
+            <GoToPose name="move_to_safe"/>
+        
+            <Open name="prepare_grip"/>
+        
+            <SetDestination name="set_start_pos" value="[(0, 0.5, 100)]"/>
+            <GoToPose name="return_start"/>
+        </Sequence>
+    </BehaviorTree>
+</root>
